@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f1f3f5;
+  color: #222;
+}
+
+.container {
+  width: min(100% - 24px, 1100px);
+  margin: 25px auto;
+}
+
+h1 {
+  text-align: center;
+  color: #1d3557;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.top-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 7px;
+  font-weight: bold;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.exercise-card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+
+.exercise-header {
+  background: #1d3557;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+
+.exercise-header small {
+  display: block;
+  margin-top: 5px;
+  color: #dbeafe;
+}
+
+.target {
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+.sets-header,
+.set-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+.sets-header {
+  background: #f1f3f5;
+  color: #555;
+  font-weight: bold;
+}
+
+.set-row {
+  border-top: 1px solid #eee;
+}
+
+.set-row input {
+  width: 100%;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+button {
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.save-btn {
+  background: #1d3557;
+}
+
+.email-btn {
+  background: #457b9d;
+}
+
+.telegram-btn {
+  background: #229ed9;
+}
+
+.clear-btn {
+  background: #e63946;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+#message {
+  display: none;
+  text-align: center;
+  background: #d8f3dc;
+  color: #1b4332;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 0;
+}
+
+.rest-day {
+  padding: 25px;
+  text-align: center;
+  color: #856404;
+  background: #fff3cd;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+@media (max-width: 700px) {
+  .top-form {
+    grid-template-columns: 1fr;
+  }
+
+  .buttons {
+    grid-template-columns: 1fr;
+  }
+
+  .exercise-header {
+    display: block;
+  }
+
+  .target {
+    margin-top: 10px;
+  }
+
+  .sets-header,
+  .set-row {
+    padding: 10px 8px;
+    gap: 6px;
+    font-size: 13px;
+  }
+}
