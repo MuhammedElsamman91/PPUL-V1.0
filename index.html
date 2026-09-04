@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PPLUL Workout Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="container">
+    <h1>جدول تمارين PPLUL</h1>
+
+    <section class="card">
+      <div class="top-form">
+        <div>
+          <label for="date">التاريخ</label>
+          <input type="date" id="date">
+        </div>
+
+        <div>
+          <label for="day">اليوم التدريبي</label>
+          <select id="day">
+            <option value="push">اليوم الأول - دفع Push</option>
+            <option value="pull">اليوم الثاني - سحب Pull</option>
+            <option value="legs">اليوم الثالث - أرجل Legs</option>
+            <option value="rest1">اليوم الرابع - راحة</option>
+            <option value="upper">اليوم الخامس - علوي Upper</option>
+            <option value="lower">اليوم السادس - سفلي Lower</option>
+            <option value="rest2">اليوم السابع - راحة</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 id="workoutTitle"></h2>
+
+      <div id="workoutContent"></div>
+
+      <div class="buttons">
+        <button id="saveBtn" class="save-btn">حفظ التمرين</button>
+        <button id="emailBtn" class="email-btn">إرسال بالإيميل</button>
+        <button id="telegramBtn" class="telegram-btn">
+          إرسال على تليجرام
+        </button>
+        <button id="clearBtn" class="clear-btn">
+          مسح الأوزان والعدات
+        </button>
+      </div>
+
+      <p id="message"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
